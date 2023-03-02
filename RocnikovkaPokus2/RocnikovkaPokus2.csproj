@@ -1,0 +1,433 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{55A0CDAD-413B-4B6C-A72D-87B9FC1DA094}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>RocnikovkaPokus2</RootNamespace>
+    <AssemblyName>RocnikovkaPokus2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Pokrmy\Kofola.xaml.cs">
+      <DependentUpon>Kofola.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Objednat\Napoj.xaml.cs">
+      <DependentUpon>Napoj.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pokrmy\Pivson.xaml.cs">
+      <DependentUpon>Pivson.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pokrmy\Horcice.xaml.cs">
+      <DependentUpon>Horcice.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pokrmy\Hranolky.xaml.cs">
+      <DependentUpon>Hranolky.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pokrmy\Kecup.xaml.cs">
+      <DependentUpon>Kecup.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pokrmy\Moucniky\Cheesecakes.xaml.cs">
+      <DependentUpon>Cheesecakes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pokrmy\Moucniky\Kapucino.xaml.cs">
+      <DependentUpon>Kapucino.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Objednat\Moucnik.xaml.cs">
+      <DependentUpon>Moucnik.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pokrmy\Cesnecka.xaml.cs">
+      <DependentUpon>Cesnecka.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pokrmy\Gulas.xaml.cs">
+      <DependentUpon>Gulas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pokrmy\Kosicky.xaml.cs">
+      <DependentUpon>Kosicky.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pokrmy\Moucniky\Cheesecakeeee.xaml.cs">
+      <DependentUpon>Cheesecakeeee.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pokrmy\Moucniky\Kapucinoooooo.xaml.cs">
+      <DependentUpon>Kapucinoooooo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pokrmy\Moucniky\Susenkyyyyy.xaml.cs">
+      <DependentUpon>Susenkyyyyy.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pokrmy\Moucniky\Tartaletkyyyy.xaml.cs">
+      <DependentUpon>Tartaletkyyyy.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pokrmy\Pirozky.xaml.cs">
+      <DependentUpon>Pirozky.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pokrmy\Hermelin.xaml.cs">
+      <DependentUpon>Hermelin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pokrmy\Hovezi.xaml.cs">
+      <DependentUpon>Hovezi.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pokrmy\Buchticky.xaml.cs">
+      <DependentUpon>Buchticky.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pokrmy\Moucniky\Susenky.xaml.cs">
+      <DependentUpon>Susenky.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pokrmy\Moucniky\Tartaletky.xaml.cs">
+      <DependentUpon>Tartaletky.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Objednat\Prilohy.xaml.cs">
+      <DependentUpon>Prilohy.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pokrmy\Tatarka.xaml.cs">
+      <DependentUpon>Tatarka.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tridy\Nakup.cs" />
+    <Compile Include="Objednat\Polevka.xaml.cs">
+      <DependentUpon>Polevka.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pokrmy\PolevkaSmrti.xaml.cs">
+      <DependentUpon>PolevkaSmrti.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Objednat\Predkrm.xaml.cs">
+      <DependentUpon>Predkrm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Hlavni Okno\Rezervace.xaml.cs">
+      <DependentUpon>Rezervace.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pokrmy\SlepiciVyvar.xaml.cs">
+      <DependentUpon>SlepiciVyvar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tridy\SpravceNakupu.cs" />
+    <Compile Include="Pokrmy\Tycinky.xaml.cs">
+      <DependentUpon>Tycinky.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pokrmy\SuschiSandvic.xaml.cs">
+      <DependentUpon>SuschiSandvic.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Hlavni Okno\Zaplatit.xaml.cs">
+      <DependentUpon>Zaplatit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pokrmy\Vinea.xaml.cs">
+      <DependentUpon>Vinea.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pokrmy\Vinecko.xaml.cs">
+      <DependentUpon>Vinecko.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Pokrmy\Kofola.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Objednat\Napoj.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pokrmy\Pivson.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pokrmy\Horcice.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pokrmy\Hranolky.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pokrmy\Kecup.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pokrmy\Moucniky\Cheesecakes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pokrmy\Moucniky\Kapucino.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Objednat\Moucnik.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pokrmy\Cesnecka.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pokrmy\Gulas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pokrmy\Kosicky.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pokrmy\Moucniky\Cheesecakeeee.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pokrmy\Moucniky\Kapucinoooooo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pokrmy\Moucniky\Susenkyyyyy.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pokrmy\Moucniky\Tartaletkyyyy.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pokrmy\Pirozky.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pokrmy\Hermelin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pokrmy\Hovezi.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pokrmy\Buchticky.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Objednat\HlavniChod.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Hlavni Okno\MujKosik.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Hlavni Okno\PlanekBudovy.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Hlavni Okno\Podpora.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pokrmy\Jidlo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Objednat\HlavniChod.xaml.cs">
+      <DependentUpon>HlavniChod.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Hlavni Okno\MujKosik.xaml.cs">
+      <DependentUpon>MujKosik.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Hlavni Okno\PlanekBudovy.xaml.cs">
+      <DependentUpon>PlanekBudovy.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Hlavni Okno\Podpora.xaml.cs">
+      <DependentUpon>Podpora.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pokrmy\Jidlo.xaml.cs">
+      <DependentUpon>Jidlo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Hlavni Okno\Objednat.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Objednat\Polevka.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pokrmy\PolevkaSmrti.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Objednat\Predkrm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Hlavni Okno\Rezervace.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pokrmy\Tycinky.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pokrmy\SuschiSandvic.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pokrmy\SlepiciVyvar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Hlavni Okno\Zaplatit.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pokrmy\Moucniky\Susenky.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pokrmy\Moucniky\Tartaletky.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Objednat\Prilohy.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pokrmy\Tatarka.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pokrmy\Vinea.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pokrmy\Vinecko.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Hlavni Okno\Objednat.xaml.cs">
+      <DependentUpon>Objednat.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Obrazky\Background.jpg" />
+    <Resource Include="Obrazky\logo.png" />
+    <Resource Include="Obrazky\vyberMenu2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Obrazky\Plánek budovy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Obrazky\Jidlo\Rizek.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Obrazky\Jidlo\Buchticky.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Obrazky\Jidlo\Hovezi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Obrazky\Jidlo\hermelin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Obrazky\Jidlo\Košíčky.jpg" />
+    <Resource Include="Obrazky\Jidlo\Pirožky.jpg" />
+    <Resource Include="Obrazky\Jidlo\Sushi sandvič.jpg" />
+    <Resource Include="Obrazky\Jidlo\Tyčinky.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Obrazky\Jidlo\Cesnečka.jpg" />
+    <Resource Include="Obrazky\Jidlo\Gulasova polevka.jpg" />
+    <Resource Include="Obrazky\Jidlo\Polevka smrti.jpg" />
+    <Resource Include="Obrazky\Jidlo\Slepicivyvar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Obrazky\Jidlo\Cheesecake.jpg" />
+    <Resource Include="Obrazky\Jidlo\Kapucino.jpg" />
+    <Resource Include="Obrazky\Jidlo\Susenky.jpg" />
+    <Resource Include="Obrazky\Jidlo\Tartaletky.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Obrazky\Jidlo\Horcice.jpg" />
+    <Resource Include="Obrazky\Jidlo\Hranolky.jpeg" />
+    <Resource Include="Obrazky\Jidlo\Tatarka.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Obrazky\Jidlo\Kecup.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Obrazky\Jidlo\Vinea.jpg" />
+    <Resource Include="Obrazky\Jidlo\Kofola.jpg" />
+    <Resource Include="Obrazky\Jidlo\Kozel.png" />
+    <Content Include="Obrazky\Jidlo\Vinea.jfif" />
+    <Resource Include="Obrazky\Jidlo\Vinecko.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

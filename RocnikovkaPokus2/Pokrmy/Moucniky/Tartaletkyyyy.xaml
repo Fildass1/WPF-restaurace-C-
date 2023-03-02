@@ -1,0 +1,29 @@
+﻿<Window x:Class="RocnikovkaPokus2.Pokrmy.Moucniky.Tartaletky"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RocnikovkaPokus2.Pokrmy.Moucniky"
+        mc:Ignorable="d"
+        Title="Tartaletky" Height="300" Width="600" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel VerticalAlignment="Center" Margin="5 0 0 0" Grid.Column="0" Grid.Row="0">
+            <Border BorderThickness="1" BorderBrush="Black">
+                <Image Source="/Obrazky/Jidlo/Tartaletky.jpg" Stretch="Fill"/>
+            </Border>
+        </StackPanel>
+
+        <StackPanel Grid.Column="1" Grid.Row="0" Margin="10" VerticalAlignment="Center" Orientation="Vertical">
+            <Border BorderThickness="1" BorderBrush="Black">
+                <TextBlock Text="Jednoduchý dezert, který ještě doladíte chutí čokolády. Těsto se skládá pouze ze 4 surovin a krém získáte z bílé čokolády a smetany. Pro Vaše potěšení můžeme i libovolně měnit barvu na vaše přání." Margin="5" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="15"/>
+            </Border>
+            <Button Content="Ok" Margin="0 10 0 0" HorizontalAlignment="Center" Width="75" Click="Button_Click"/>
+        </StackPanel>
+
+
+    </Grid>
+</Window>

@@ -1,0 +1,49 @@
+﻿<Window x:Class="RocnikovkaPokus2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RocnikovkaPokus2"
+        mc:Ignorable="d"
+        Title="KunŠtáty Restaurant" Height="600" Width="1000" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Image Grid.ColumnSpan="7"  Grid.RowSpan="5" Source="Obrazky/Background.jpg" Stretch="Fill"/>
+        <TextBlock Text="KunŠtáty Restaurante" Grid.Column="3" Grid.Row="0" FontSize="35" HorizontalAlignment="Center" VerticalAlignment="Center" Background="RosyBrown" Padding="5"/>
+        <Image Grid.Column="3" Grid.Row="1" Grid.RowSpan="3" Source="Obrazky/logo.png" Stretch="Fill" Margin="10"/>
+        <!--Tlačítka odkazující na další okna-->
+        <Button Content="OBJEDNAT" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="1" FontSize="30" Margin="10 0 0 0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="220" Height="70" Background="RosyBrown" Click="Button_Click"/>
+        <Button Content="PLÁN BUDOVY" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="2" FontSize="30" Margin="0 0 70 0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="220" Height="70" Background="RosyBrown" Click="Button_Click_4"/>
+        <Button Content="PODPORA" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="2" FontSize="30" Margin="44,227,34,28" HorizontalAlignment="Center" VerticalAlignment="Center" Width="220" Height="70" Background="RosyBrown" Grid.RowSpan="2" Click="Button_Click_2"/>
+        <Button Content="MŮJ KOŠÍK" Grid.Column="4" Grid.ColumnSpan="3" Grid.Row="1" FontSize="30" Margin="10 0 0 0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="220" Height="70" Background="RosyBrown" Click="Button_Click_3"/>
+        <Button Content="UKONČIT" Grid.Column="4" Grid.ColumnSpan="3" Grid.Row="2" FontSize="30" Margin="44,87,33,87" HorizontalAlignment="Center" VerticalAlignment="Center" Width="220" Height="70" Background="RosyBrown" Click="Button_Click_5"/>
+        <!--Zobrazení celkové ceny nákupu-->
+        <StackPanel Orientation="Horizontal" Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="2" VerticalAlignment="Center" >
+            <TextBlock Text="Ceková cena: " Padding="10" FontSize="35" Background="RosyBrown"/>
+            <TextBlock Text="       " Background="RosyBrown"/>
+            <TextBlock Text="{Binding CelkovaCena.Cena}" Padding="10" FontSize="35" Background="RosyBrown" Name="celkovaCenaTextBlock" Margin="0 0 0 0"/>
+            <TextBlock Text="Kč" FontSize="35" Padding="10" Background="RosyBrown"/>
+        </StackPanel>
+        <!--Tlačítka odkazující na další okna-->
+        <Button Content="ZAPLATIT" Grid.Column="4" Grid.ColumnSpan="3" Grid.Row="4" FontSize="30" Margin="26,7,51,4" HorizontalAlignment="Center" VerticalAlignment="Center" Width="220" Height="70" Background="RosyBrown" Click="Button_Click_6"/>
+        <Button Content="REZERVACE" Grid.Column="4" Grid.ColumnSpan="3" Grid.Row="2" FontSize="30" Margin="26,227,51,28" HorizontalAlignment="Center" VerticalAlignment="Center" Width="220" Height="70" Background="RosyBrown" Click="Button_Click_1" Grid.RowSpan="2"/>
+
+
+
+    </Grid>
+</Window>
